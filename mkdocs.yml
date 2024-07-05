@@ -81,6 +81,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/conditional.js
+
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -88,6 +91,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.extra
   - pymdownx.critic
   - pymdownx.tasklist:
       custom_checkbox: true
