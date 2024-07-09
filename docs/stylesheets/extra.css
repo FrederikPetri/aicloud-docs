@@ -267,6 +267,39 @@ input.md-search__input::placeholder {
 .show-on-ai-cloud, .show-on-ai-lab {
   font-family: "Roboto", sans-serif;
 }
+dl.field-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10px, max-content));
+  margin: 0;
+}
+dl.field-list dt {
+  margin: 0 1rem 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(44 47 52);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.5rem;
+}
+dl.field-list dd {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(93 106 133);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1.5rem;
+}
+dl.field-list dd li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(93 106 133);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+}
 
 
 .grid ul li {

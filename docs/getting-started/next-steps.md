@@ -1,4 +1,4 @@
-To further explore and enhance your use of AI-LAB, we recommend to take a look at the following guides:
+To further explore and enhance your use of AI Cloud, we recommend to take a look at the following guides:
 
 - Before running a job, learn how to [**check the queue**](../additional-guides/checking-the-queue.md) to see how many jobs are ahead of you or review your own job status
 - Discover how to run a container in [**interactive mode**](../additional-guides/running-a-container-in-interactive-mode.md) by using `shell` instead of `exec`

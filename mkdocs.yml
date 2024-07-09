@@ -15,12 +15,6 @@ nav:
     - Getting applications: getting-started/getting-applications.md
     - Running jobs: getting-started/running-jobs.md
     - Next steps: getting-started/next-steps.md
-  - Applications:
-    - Ollama and LLM: applications/ollama-and-llm.md
-    - MATLAB: applications/matlab.md
-    - TensorFlow: applications/tensorflow.md
-    - PyTorch: applications/pytorch.md
-    - ImageMagick: applications/imagemagick.md
   - Additional guides:
     - Monitoring commands:
       - Checking the queue: additional-guides/checking-the-queue.md
@@ -44,17 +38,12 @@ nav:
     - Hardware: system-overview/hardware.md
     - Software: system-overview/software.md
     - Storage: system-overview/storage.md
-  - Courses:
-    - Empty for now: courses/empty-for-now.md
   - Help & resources:
     - Support: help-and-resources/support.md
     - Guidelines: help-and-resources/guidelines.md
     - Known issues:  help-and-resources/known-issues.md
     - Glossery:  help-and-resources/glossery.md
     - Terminal basics: help-and-resources/terminal-basics.md
-    - For lecturers:
-      - Adding a course: help-and-resources/for-lecturers/adding-a-course.md
-      - Page design guide: help-and-resources/for-lecturers/page-design-guide.md      
     
 theme:
   name: material
@@ -91,7 +80,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
-  - pymdownx.extra
+  - pymdownx.extra:
+      pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -105,11 +99,7 @@ markdown_extensions:
   - admonition
   - md_in_html
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+
 extra:
   generator: false
   social:

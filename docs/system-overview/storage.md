@@ -1,4 +1,4 @@
-AI-LAB utilizes [Ceph](https://docs.ceph.com/) as its storage solution, providing a robust and scalable file system for your data needs. Your files are organized within the Ceph file system hierarchy, ensuring efficient access and management across the entire platform.
+AI Cloud utilizes [Ceph](https://docs.ceph.com/) as its storage solution, providing a robust and scalable file system for your data needs. Your files are organized within the Ceph file system hierarchy, ensuring efficient access and management across the entire platform.
 
 <hr>
 
@@ -7,7 +7,7 @@ Your user directory serves as the primary location for storing personal files an
 
 <div class="tree">
     <ul>
-    <li><i class="fa fa-folder-open"></i> /ceph <span>AI-LAB's file system</span>
+    <li><i class="fa fa-folder-open"></i> / <span>AI Cloud's file system</span>
         <ul>
         <li><i class="fa fa-folder-open"></i> home <span>user home directories</span>
             <ul>
@@ -28,15 +28,15 @@ Here, [domain] represents your domain or institution (e.g., student.aau.dk), and
 <hr>
 
 ## Shared Project Directories
-AI-LAB fosters collaborative work through shared project directories. These directories enable multiple users to collaborate on projects by providing a centralized space for data sharing and collaboration. Shared project directories are organized under the project directory within the Ceph file system:
+AI Cloud fosters collaborative work through shared project directories. These directories enable multiple users to collaborate on projects by providing a centralized space for data sharing and collaboration. Shared project directories are organized under the project directory within the Ceph file system:
 
 <div class="tree">
     <ul>
-    <li><i class="fa fa-folder-open"></i> /ceph <span>AI-LAB's file system</span>
+    <li><i class="fa fa-folder-open"></i> /home <span>AI Cloud's file system</span>
         <ul>
         <li><i class="fa fa-folder-open"></i> project <span>shared project directories</span>
             <ul>
-            <li><i class="fa fa-folder"></i> projectgroup_X
+            <li><i class="fa fa-folder"></i> project_X
             </li>
             </ul>
         </li>
@@ -45,57 +45,37 @@ AI-LAB fosters collaborative work through shared project directories. These dire
     </ul>
 </div>
 
-Each project group has its designated directory, ensuring secure access and efficient collaboration among team members.
+Your projects directory is a subdirectory to an overall project directories folder hierarchy.
 
-==TODO: Guide on how to utilize this==
+Go in to the project directory
 
-<hr>
+```
+cd /home/project
+```
 
-## Course Materials
-To support educational activities, AI-LAB hosts course-specific materials within dedicated directories. These materials include lecture notes, assignments, datasets, and any resources relevant to the course curriculum. Course directories are structured under the course directory within the Ceph file system:
+Before going ahead and creating a directory for group project, please consider naming the directory in a meaningful manner (ie. after your group or research project) A project directory can be created in the following manner (swap out `<name>` for the actual name of your project).
 
-<div class="tree">
-    <ul>
-    <li><i class="fa fa-folder-open"></i> /ceph <span>AI-LAB's file system</span>
-        <ul>
-        <li><i class="fa fa-folder-open"></i> course <span>directory with course specific material</span>
-            <ul>
-                <li><i class="fa fa-folder-open"></i> Course 1. Introduction to TensorFLow
-                <ul>
-                    <li><i class="fa fa-folder"></i> Images</li>
-                    <li><i class="fa fa-file"></i> tensorflow.sif</li>
-                </ul>
-                </li>
-                <li><i class="fa fa-folder-open"></i> Course 2. ...
-            </li>
-            </ul>
-        </li>
-        </ul>
-    </li>
-    </ul>
-</div>
+```
+mkdir <name> 
+```
 
-Students and instructors can access course materials effortlessly, enhancing the learning experience and facilitating hands-on exercises.
+Please remember, that these directories should be deleted when your project is finished, and you no longer need them. They are not intended for long term data storage.
 
-<hr>
+Happy computing!
 
-## Ready-to-Use Applications
-For convenience and efficiency, AI-LAB offers a collection of ready-to-use applications packaged as container images that can easily be copied to your user directoty. We aim to consistently update these images to the latest versions.
+## Storage quota expansions
+When users log in to AI Cloud for the first time, a user directory is created for them. These directories are allocated 1 TB of storage by default. This should be plenty for most users, but should you need additional space, it is possible to apply for storage quota expansions for a limited time using our [Storage quota expansions form](https://forms.office.com/e/AjT0GccAPb).
 
-<div class="tree">
-    <ul>
-    <li><i class="fa fa-folder-open"></i> /ceph
-        <ul>
-        <li><i class="fa fa-folder-open"></i> container <span>directory with ready-to-use applications</span>
-            <ul>
-            <li><i class="fa fa-file"></i> tensorflow.sif</li>
-            <li><i class="fa fa-file"></i> pytorch.sif</li>
-            <li><i class="fa fa-file"></i> ...sif</li>
-            </ul>
-        </li>
-        </ul>
-    </li>
-    </ul>
-</div>
+!!! info
+    When you log in to the platform, you can see your storage usage of the user directory at the very top line:
 
-If you have specific container image requests, we welcome your input. Please reach out to us via the [AAU service portal](https://www.serviceportal.aau.dk/) and include "CLAAUDIA" and "AI-LAB" in the subject line.
+    ```
+    Current quota usage: 181GiB / 1.0TiB
+    Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-169-generic x86_64)
+
+    * Documentation:  https://help.ubuntu.com
+    * Management:     https://landscape.canonical.com
+    * Support:        https://ubuntu.com/pro
+
+    System information as of Fri Mar 15 11:09:21 CET 2024
+    ```
