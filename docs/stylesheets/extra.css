@@ -180,6 +180,10 @@ input.md-search__input::placeholder {
   color: rgb(44, 47, 52);
   opacity: 0.7;
 }
+.md-sidebar.md-sidebar--primary {
+  height: 100%;
+  padding: 0;
+}
 .md-sidebar--primary .md-sidebar__scrollwrap {
   border-right: 1px solid rgb(222 227 234);
 }
