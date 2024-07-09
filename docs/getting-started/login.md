@@ -1,6 +1,6 @@
 To login you need to [SSH connect](https://www.cloudflare.com/learning/access-management/what-is-ssh/) to the front-end node, `ai-fe02.srv.aau.dk`. 
 
-Run the following command on the command line of your local Windows (*Windows PowerShell*), macOS, or Linux computer:
+Run the following command on a command-line interface on your local Windows (*Windows PowerShell*), macOS, or Linux computer:
 
 ```
 ssh -l user@domain.aau.dk ai-fe02.srv.aau.dk
