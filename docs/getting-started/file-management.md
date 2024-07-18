@@ -26,7 +26,7 @@ For a detailed overview of the AI Cloud storage system, click [here](../system-o
 <hr>
 
 ## Transfer files within AI Cloud
-You can use the command `cp [source] [destination]` to copy files to and from directories within AI Cloud. 
+You can use the command `cp [source] [destination]` to copy files and `cp -r [source] [destination]` to copy folders to and from directories within AI Cloud. 
 
 <hr>
 
